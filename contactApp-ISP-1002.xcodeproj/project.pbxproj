@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		0E17049A2942E9B40063C203 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1704992942E9B40063C203 /* AppDelegate.swift */; };
 		0E17049C2942E9B40063C203 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E17049B2942E9B40063C203 /* SceneDelegate.swift */; };
-		0E17049E2942E9B40063C203 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E17049D2942E9B40063C203 /* ViewController.swift */; };
+		0E17049E2942E9B40063C203 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E17049D2942E9B40063C203 /* ContactsViewController.swift */; };
 		0E1704A12942E9B40063C203 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E17049F2942E9B40063C203 /* Main.storyboard */; };
 		0E1704A32942E9B50063C203 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E1704A22942E9B50063C203 /* Assets.xcassets */; };
 		0E1704A62942E9B50063C203 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E1704A42942E9B50063C203 /* LaunchScreen.storyboard */; };
+		0E1704EF29494DD10063C203 /* ContactsCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1704EE29494DD10063C203 /* ContactsCustomCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0E1704962942E9B40063C203 /* contactApp-ISP-1002.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "contactApp-ISP-1002.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E1704992942E9B40063C203 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E17049B2942E9B40063C203 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0E17049D2942E9B40063C203 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0E17049D2942E9B40063C203 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
 		0E1704A02942E9B40063C203 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0E1704A22942E9B50063C203 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E1704A52942E9B50063C203 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E1704A72942E9B50063C203 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E1704EE29494DD10063C203 /* ContactsCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsCustomCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 			children = (
 				0E1704992942E9B40063C203 /* AppDelegate.swift */,
 				0E17049B2942E9B40063C203 /* SceneDelegate.swift */,
-				0E17049D2942E9B40063C203 /* ViewController.swift */,
+				0E17049D2942E9B40063C203 /* ContactsViewController.swift */,
+				0E1704EE29494DD10063C203 /* ContactsCustomCell.swift */,
 				0E17049F2942E9B40063C203 /* Main.storyboard */,
 				0E1704A22942E9B50063C203 /* Assets.xcassets */,
 				0E1704A42942E9B50063C203 /* LaunchScreen.storyboard */,
@@ -138,7 +141,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E17049E2942E9B40063C203 /* ViewController.swift in Sources */,
+				0E17049E2942E9B40063C203 /* ContactsViewController.swift in Sources */,
+				0E1704EF29494DD10063C203 /* ContactsCustomCell.swift in Sources */,
 				0E17049A2942E9B40063C203 /* AppDelegate.swift in Sources */,
 				0E17049C2942E9B40063C203 /* SceneDelegate.swift in Sources */,
 			);
