@@ -71,15 +71,17 @@ class ContactDetailsViewController: UIViewController {
         present(deleteAlert, animated: true, completion: nil)
     }
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == "editContact" {
-//                if let viewController = segue.destination as? AddContactsViewController {
-//                    viewController.contactDetailViewControllerRef = self
-//                    viewController.editContact = true
-//                    viewController.contact = contact
-//                    }
-//            }
-//    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "editContact" {
+                if let viewController = segue.destination as? AddContactsViewController {
+                    viewController.contactDetailViewControllerRef = self
+                    viewController.editContact = true
+                    viewController.contact = contact
+                    }
+            }
+    }
+
     func deleteContact() -> Bool {
         self.managedContext.delete(self.contact)
                 do {

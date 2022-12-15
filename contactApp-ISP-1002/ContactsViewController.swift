@@ -47,6 +47,14 @@ class ContactsViewController: UIViewController, UITableViewDelegate, UITableView
             tableView.reloadData()
         }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "addContact" {
+                if let viewController = segue.destination as? AddContactsViewController {
+                    viewController.contactViewControllerRef = self
+                    viewController.editContact = false
+                    }
+            }
+    }
 
 
 
