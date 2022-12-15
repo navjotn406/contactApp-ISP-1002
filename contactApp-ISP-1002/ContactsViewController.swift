@@ -9,7 +9,7 @@ import Foundation
 import CoreData
 
 class ContactsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
-    
+    let managedContext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     var contactsArray: [NSManagedObject] = []
     var filteredContactsArray: [NSManagedObject] = [] // For displaying search results
     var isInSearchMode = false
@@ -38,14 +38,30 @@ class ContactsViewController: UIViewController, UITableViewDelegate, UITableView
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
+        refreshData()
+    }
         func dismissKeyboard() {
             searchBar.text = ""
             isInSearchMode = false
             view.endEditing(true)
             tableView.reloadData()
         }
+    
+
+
+
+func refreshData() {
+    let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Contact")
+    
+    do {
+       let temp = try managedContext.fetch(fetchRequest)
+        contactsArray = temp.reversed()
+    } catch let error as NSError {
+      print("Could not fetch. \(error), \(error.userInfo)")
     }
+    
+    tableView.reloadData()
+}
     
     @IBAction func addContactButtonTapped(_ sender: Any) {
         performSegue(withIdentifier: "addContact", sender: self)
@@ -71,6 +87,17 @@ class ContactsViewController: UIViewController, UITableViewDelegate, UITableView
         cell.nameLabel.text = firstName + " " + lastName
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let contactDetailsViewController = storyBoard.instantiateViewController(withIdentifier: "ContactDetailsViewController") as! ContactDetailsViewController
+        
+        let contact = contactsArray[indexPath.row]
+        contactDetailsViewController.contactViewControllerRef = self
+        contactDetailsViewController.contact = contact
+        
+        self.navigationController?.pushViewController(contactDetailsViewController, animated: true)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
