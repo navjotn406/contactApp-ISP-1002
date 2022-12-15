@@ -14,6 +14,7 @@
 		0E1704A32942E9B50063C203 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E1704A22942E9B50063C203 /* Assets.xcassets */; };
 		0E1704A62942E9B50063C203 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E1704A42942E9B50063C203 /* LaunchScreen.storyboard */; };
 		0E1704EF29494DD10063C203 /* ContactsCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1704EE29494DD10063C203 /* ContactsCustomCell.swift */; };
+		220B4A4F294B5B0500D8298F /* AddContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220B4A4E294B5B0500D8298F /* AddContactViewController.swift */; };
 		BAC1C5C9294A6B6E00CC49FD /* ContactDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC1C5C8294A6B6E00CC49FD /* ContactDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		0E1704A52942E9B50063C203 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E1704A72942E9B50063C203 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0E1704EE29494DD10063C203 /* ContactsCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsCustomCell.swift; sourceTree = "<group>"; };
+		220B4A4E294B5B0500D8298F /* AddContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactViewController.swift; sourceTree = SOURCE_ROOT; };
 		BAC1C5C8294A6B6E00CC49FD /* ContactDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,6 +67,7 @@
 				0E17049D2942E9B40063C203 /* ContactsViewController.swift */,
 				0E1704EE29494DD10063C203 /* ContactsCustomCell.swift */,
 				BAC1C5C8294A6B6E00CC49FD /* ContactDetailsViewController.swift */,
+				220B4A4E294B5B0500D8298F /* AddContactViewController.swift */,
 				0E17049F2942E9B40063C203 /* Main.storyboard */,
 				0E1704A22942E9B50063C203 /* Assets.xcassets */,
 				0E1704A42942E9B50063C203 /* LaunchScreen.storyboard */,
@@ -147,6 +150,7 @@
 				BAC1C5C9294A6B6E00CC49FD /* ContactDetailsViewController.swift in Sources */,
 				0E17049E2942E9B40063C203 /* ContactsViewController.swift in Sources */,
 				0E1704EF29494DD10063C203 /* ContactsCustomCell.swift in Sources */,
+				220B4A4F294B5B0500D8298F /* AddContactViewController.swift in Sources */,
 				0E17049A2942E9B40063C203 /* AppDelegate.swift in Sources */,
 				0E17049C2942E9B40063C203 /* SceneDelegate.swift in Sources */,
 			);
