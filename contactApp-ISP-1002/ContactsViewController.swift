@@ -101,7 +101,10 @@ func refreshData() {
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
         let contactDetailsViewController = storyBoard.instantiateViewController(withIdentifier: "ContactDetailsViewController") as! ContactDetailsViewController
         
-        let contact = contactsArray[indexPath.row]
+        var contact = contactsArray[indexPath.row]
+        if isInSearchMode{
+            contact = filteredContactsArray[indexPath.row]
+        }
         contactDetailsViewController.contactViewControllerRef = self
         contactDetailsViewController.contact = contact
         
