@@ -70,11 +70,11 @@
 				0E1704EE29494DD10063C203 /* ContactsCustomCell.swift */,
 				BAC1C5C8294A6B6E00CC49FD /* ContactDetailsViewController.swift */,
 				220B4A4E294B5B0500D8298F /* AddContactViewController.swift */,
+				BAE3FF81294C05A200A11FCB /* ContactsApp.xcdatamodeld */,
 				0E17049F2942E9B40063C203 /* Main.storyboard */,
 				0E1704A22942E9B50063C203 /* Assets.xcassets */,
 				0E1704A42942E9B50063C203 /* LaunchScreen.storyboard */,
 				0E1704A72942E9B50063C203 /* Info.plist */,
-				BAE3FF81294C05A200A11FCB /* ContactsApp.xcdatamodeld */,
 			);
 			path = "contactApp-ISP-1002";
 			sourceTree = "<group>";
