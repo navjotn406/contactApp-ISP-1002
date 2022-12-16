@@ -40,13 +40,14 @@ class ContactsViewController: UIViewController, UITableViewDelegate, UITableView
         super.viewWillAppear(animated)
         refreshData()
     }
-        func dismissKeyboard() {
-            searchBar.text = ""
-            isInSearchMode = false
-            view.endEditing(true)
-            tableView.reloadData()
-        }
+    func dismissKeyboard() {
+        searchBar.text = ""
+        isInSearchMode = false
+        view.endEditing(true)
+        tableView.reloadData()
+    }
     
+<<<<<<< Updated upstream
 
 
 
@@ -58,10 +59,31 @@ func refreshData() {
         contactsArray = temp.reversed()
     } catch let error as NSError {
       print("Could not fetch. \(error), \(error.userInfo)")
+=======
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "addContact" {
+            if let viewController = segue.destination as? AddContactsViewController {
+                viewController.contactViewControllerRef = self
+                viewController.editContact = false
+            }
+        }
+>>>>>>> Stashed changes
     }
     
-    tableView.reloadData()
-}
+    
+    
+    func refreshData() {
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Contact")
+        
+        do {
+            let temp = try managedContext.fetch(fetchRequest)
+            contactsArray = temp.reversed()
+        } catch let error as NSError {
+            print("Could not fetch. \(error), \(error.userInfo)")
+        }
+        
+        tableView.reloadData()
+    }
     
     @IBAction func addContactButtonTapped(_ sender: Any) {
         performSegue(withIdentifier: "addContact", sender: self)
