@@ -13,7 +13,6 @@ class ContactDetailsViewController: UIViewController {
     var contact = NSManagedObject()
     var contactViewControllerRef = ContactsViewController()
     
-//    let managedContext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     let managedContext = (UIApplication.shared.delegate as!AppDelegate).persistentContainer.viewContext
     
     override func viewDidLoad() {

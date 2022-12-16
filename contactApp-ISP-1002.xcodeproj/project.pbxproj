@@ -16,6 +16,7 @@
 		0E1704EF29494DD10063C203 /* ContactsCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1704EE29494DD10063C203 /* ContactsCustomCell.swift */; };
 		220B4A4F294B5B0500D8298F /* AddContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220B4A4E294B5B0500D8298F /* AddContactViewController.swift */; };
 		BAC1C5C9294A6B6E00CC49FD /* ContactDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC1C5C8294A6B6E00CC49FD /* ContactDetailsViewController.swift */; };
+		BAE3FF83294C05A200A11FCB /* ContactsApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BAE3FF81294C05A200A11FCB /* ContactsApp.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		0E1704EE29494DD10063C203 /* ContactsCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsCustomCell.swift; sourceTree = "<group>"; };
 		220B4A4E294B5B0500D8298F /* AddContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactViewController.swift; sourceTree = SOURCE_ROOT; };
 		BAC1C5C8294A6B6E00CC49FD /* ContactDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsViewController.swift; sourceTree = "<group>"; };
+		BAE3FF82294C05A200A11FCB /* SimpleContactsApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SimpleContactsApp.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				0E1704A22942E9B50063C203 /* Assets.xcassets */,
 				0E1704A42942E9B50063C203 /* LaunchScreen.storyboard */,
 				0E1704A72942E9B50063C203 /* Info.plist */,
+				BAE3FF81294C05A200A11FCB /* ContactsApp.xcdatamodeld */,
 			);
 			path = "contactApp-ISP-1002";
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 			files = (
 				BAC1C5C9294A6B6E00CC49FD /* ContactDetailsViewController.swift in Sources */,
 				0E17049E2942E9B40063C203 /* ContactsViewController.swift in Sources */,
+				BAE3FF83294C05A200A11FCB /* ContactsApp.xcdatamodeld in Sources */,
 				0E1704EF29494DD10063C203 /* ContactsCustomCell.swift in Sources */,
 				220B4A4F294B5B0500D8298F /* AddContactViewController.swift in Sources */,
 				0E17049A2942E9B40063C203 /* AppDelegate.swift in Sources */,
@@ -372,6 +376,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BAE3FF81294C05A200A11FCB /* ContactsApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BAE3FF82294C05A200A11FCB /* SimpleContactsApp.xcdatamodel */,
+			);
+			currentVersion = BAE3FF82294C05A200A11FCB /* SimpleContactsApp.xcdatamodel */;
+			name = ContactsApp.xcdatamodeld;
+			path = "../../../../untitled folder/ContactsApp.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 0E17048E2942E9B40063C203 /* Project object */;
 }
